@@ -16,11 +16,11 @@ const Add = () => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
-  const addData = async () => { // Make the outer function async
+  const addData = async () => { 
     try {
       const response = await axios.post("http://localhost:3001/add", inputs);
       console.log(response.data);
-      navigate("/"); // Navigate to the home page or wherever you want after success
+      navigate("/"); 
     } catch (error) {
       console.error("There was an error adding the employee data:", error);
     }

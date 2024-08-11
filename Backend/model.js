@@ -1,4 +1,3 @@
-//Write missing code here
 const mongoose = require('mongoose');
 const employeeSchema = new mongoose.Schema({
   EmpName: String,

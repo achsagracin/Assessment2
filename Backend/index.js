@@ -1,4 +1,3 @@
-// import model from "./model";
 const express = require("express");
 const cors = require("cors");
 const Employee = require('./model');
